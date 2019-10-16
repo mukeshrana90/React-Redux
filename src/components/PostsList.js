@@ -14,7 +14,7 @@ class PostsList extends Component {
             return this.props.posts.map(post => {
                 return (
                     <li key={post.id}>{post.title}
-                        <UserHeader userId={post.userId}/>
+                        <UserHeader userId={post.userId} />
                     </li>
                 )
             })
@@ -26,13 +26,13 @@ class PostsList extends Component {
             <div>
                 <ul>
                     {this.postListRender()}
-                </ul>                
+                </ul>
             </div>
         )
     }
 }
 
-const mapStateToProps = (state) => {    
+const mapStateToProps = (state) => {
     return { posts: state.posts }
 }
 
