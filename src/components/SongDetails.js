@@ -4,12 +4,12 @@ import { connect } from 'react-redux'
 const SongDetails = (props)=> {    
     if(props.song == null) {
         return (
-            <h1>Please select any song</h1>
+            <h6>Please select any song</h6>
         )
     }
     else {
         return (
-            <h1>{props.song.title}</h1>
+            <h6>{props.song.title}</h6>
         )
     }
     

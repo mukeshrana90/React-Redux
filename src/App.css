@@ -11,3 +11,14 @@ ul {
 .App-link {
   color: #09d3ac;
 }
+
+.container {
+  display: flex;  
+}
+.col {
+  padding: 15px;
+  flex: 1;
+}
+h1 {
+  margin-top: 0;
+}
